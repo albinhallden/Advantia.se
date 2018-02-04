@@ -1,0 +1,37 @@
+{
+  "name": "advantia.se",
+  "version": "1.0.0",
+  "description": "This is the repo containing the homepage of [Advantia.se](https://advantia.se)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albinhallden/Advantia.se.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albinhallden/Advantia.se/issues"
+  },
+  "homepage": "https://github.com/albinhallden/Advantia.se#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.20.1"
+  }
+}
