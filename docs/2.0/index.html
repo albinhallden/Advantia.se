@@ -49,6 +49,7 @@
       position: relative;
       overflow: hidden;
       max-height: 56rem;
+      color: #f9ce41
     }
 
     header .background {
@@ -67,7 +68,6 @@
     footer {
       padding: 1rem;
       margin: 0 -1rem;
-      color: #866f24;
       text-align: center;
       flex: 0 0 auto;
     }
@@ -75,10 +75,17 @@
     main {
       flex: 1 0 auto;
       padding: 2rem 0;
+      max-width: 48rem;
+      margin: auto;
+    }
+
+    li + li {
+      margin-top: .25rem;
     }
 
     footer {
       font-size: .8rem;
+      color: #866f24;
     }
 
     header .centered-container {
@@ -87,8 +94,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 4rem;
-      background: #eeeeee;
       margin: 0;
+      box-shadow: #000 0 0 5rem;
+      background: rgba(51, 51, 51, 0.8);
+      border: 1px solid #866f24;
     }
 
     header .centered-container h1 {
@@ -133,7 +142,7 @@
       </div>
     </header>
     <main>
-      <h2>Hi!</h2>
+      <h2>Hi! ✋</h2>
       <p>Of all pages on the internet you managed to end up here, on our website. We are glad!</p>
       <p>
         This website is still under development, both tech and content wise. We are still working on;
@@ -144,13 +153,28 @@
         </ul>
       </p>
       <p>But I can assure you that it will show up here as soon as we are done.</p>
-      <p>Do you have questions already? Contact us at <a href="mailto:info@advantia.se">info@advantia.se</a></p>
+
+      <h2>What we do</h2>
+
+      <p>Advantia Consulting is a cunsultant firm currently starring two consultants, Emma Cappner And Albin Halldén who also happens to be the owners of the company.</p>
+
+      <p>We decided to create a company together but we are working with two different things that can be summarized as <b>Management</b> and <b>IT development</b></p>
+
+      <p>
+        Until we have our profiles pages set up here, visit us on Linked In:
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/cappner/">Emma Cappner, Management consultant</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/albinhallden/">Albin Halldén, IT consultant</a>
+          </li>
+        </ul>
+      </p>
+
     </main>
     <footer>
       <p>Copyright &copy; 2018 Advantia Consulting AB</p>
-      <p>
-        <a href="mailto:info@advantia.se">Contact us</a>
-      </p>
     </footer>
   </div>
 </body>
