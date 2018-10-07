@@ -20,19 +20,15 @@
       letter-spacing: .04rem;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      background: #111111;
     }
 
     body {
-      color: #333;
+      color: #FFFFFF;
     }
 
     a {
-      color: #333333;  
-    }
-
-    header,
-    footer {
-      background-color: rgb(240, 240, 240);
+      color: #FFFFFF;  
     }
 
     .content {
@@ -48,20 +44,9 @@
       height: 100%;
       position: relative;
       overflow: hidden;
-      max-height: 56rem;
-      color: #f9ce41
-    }
-
-    header .background {
-      background-image: url('images/header-background.jpg');
-      background-size:cover;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      transform: scale(1.1);
-      filter: blur(.5rem) grayscale(90%) brightness(1.35);
+      /* max-height: 56rem; */
+      color: #f9ce41;
+      max-height: 30rem;
     }
 
     header,
@@ -93,15 +78,23 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 4rem;
+      width: 16rem;
+      height: 16rem;
       margin: 0;
-      box-shadow: #000 0 0 5rem;
-      background: rgba(51, 51, 51, 0.8);
     }
 
     header .centered-container h1 {
       margin-top: 0;
       margin-bottom: 0;
+      position: absolute;
+      left: -1000rem;
+      height: -1000rem;
+    }
+
+    header .centered-container img {
+      max-width: 100%;
+      max-height: 100%;
+      -webkit-box-reflect: below 0 -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
     }
 
     @media screen and (min-width: 32rem) {
@@ -110,7 +103,7 @@
       }
 
       header {
-        max-height: 36rem;
+        /* max-height: 36rem; */
       }
 
       header,
@@ -121,7 +114,7 @@
 
     @media screen and (min-width: 68rem) {
       header {
-        max-height: 24rem;
+        /* max-height: 24rem; */
       }
 
       .content {
@@ -134,43 +127,14 @@
 <body>
   <div class="content">
     <header>
-      <div class="background"></div>
       <div class="centered-container">
-        <div class="logo"></div>
         <h1>Advantia</h1>
+        <div class="logo"></div>
+        <img src="images/logo4x.png" alt="">
       </div>
     </header>
     <main>
-      <h2>Hi! ✋</h2>
-      <p>Of all pages on the internet you managed to end up here, on our website. We are glad!</p>
-      <p>
-        This website is still under development, both tech and content wise. We are still working on;
-        <ul>
-          <li>Creating a logo for our company.</li>
-          <li>Working on the implementation of this website.</li>
-          <li>Deciding what content should be here.</li>
-        </ul>
-      </p>
-      <p>But I can assure you that it will show up here as soon as we are done.</p>
-
-      <h2>What we do</h2>
-
-      <p>
-        Advantia Consulting is a consultant company founded in 2017. It's owned by <b>Emma Cappner, Management Consultant</b>, and <b>Albin Halldén, IT consultant</b>.
-      </p>
-
-      <p>
-          Until we have the website with our services up and running, visit us on LinkedIn:          
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/cappner/">Emma Cappner, Management consultant</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/albinhallden/">Albin Halldén, IT consultant</a>
-          </li>
-        </ul>
-      </p>
-
+      
     </main>
     <footer>
       <p>Copyright &copy; 2018 Advantia Consulting AB</p>
